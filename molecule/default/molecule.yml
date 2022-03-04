@@ -4,15 +4,15 @@ dependency:
   enabled: true
   options:
     ignore-errors: true
+    role-file: requirements.yml
 driver:
-  name: delegated
-lint: |
-  set -e
-  yamllint .
-  ansible-lint
+  name: docker
 platforms:
-  - name: instance
-    image: centos:7
+  - name: ubuntu1804
+    image: 'geerlingguy/docker-ubuntu1804-ansible:latest'
+    command: ${MOLECULE_DOCKER_COMMAND:-""}
+    privileged: true
+    pre_build_image: true
 provisioner:
   name: ansible
   lint:

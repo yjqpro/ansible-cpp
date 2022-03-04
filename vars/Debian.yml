@@ -1,21 +1,24 @@
 ---
-
 cpp_package_list:
-#  - libstdc++5
+  #  - libstdc++5
   - libxml2-dev
-#  - liblog4cxx10
-#  - liblog4cxx10v5
+  #  - liblog4cxx10
+  #  - liblog4cxx10v5
   - libapr1
   - libaprutil1
-#  - libssl0.9.8
+  #  - libssl0.9.8
   - libldap-2.4-2
   - libcurl3
   - zlib1g
-#  - libcrypto++9
-#  - libxerces-c28
-# - libz-dbg
-#  - liblog4cxx-dev
-#opengl
+  - curl
+  - zip
+  - unzip
+  - tar
+  #  - libcrypto++9
+  #  - libxerces-c28
+  # - libz-dbg
+  #  - liblog4cxx-dev
+  #opengl
   - mesa-common-dev
   - libglu-dev
   #- libgoogle-perftools-dev
